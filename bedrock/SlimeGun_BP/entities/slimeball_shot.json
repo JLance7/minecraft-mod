@@ -1,0 +1,46 @@
+{
+  "format_version": "1.21.130",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "slimegun:slimeball_shot",
+      "is_spawnable": false,
+      "is_summonable": true
+    },
+    "component_groups": {
+      "slimegun:expired": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:physics": {
+        "has_gravity": false,
+        "has_collision": false
+      },
+      "minecraft:collision_box": {
+        "width": 0,
+        "height": 0
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:timer": {
+        "looping": false,
+        "time": 3,
+        "time_down_event": {
+          "event": "slimegun:expire",
+          "target": "self"
+        }
+      }
+    },
+    "events": {
+      "slimegun:expire": {
+        "add": {
+          "component_groups": [
+            "slimegun:expired"
+          ]
+        }
+      }
+    }
+  }
+}

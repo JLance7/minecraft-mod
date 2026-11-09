@@ -1,0 +1,8 @@
+{
+  "gradleUrl": "https://services.gradle.org/distributions/gradle-8.14.3-bin.zip",
+  "jdkUrl": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13%2B9/OpenJDK21U-jdk_x64_windows_hotspot_21.0.13_9.zip",
+  "loader": "0.20.1",
+  "fabricApi": "0.116.17+1.21.1",
+  "jdkHash": "a4dbaa05fca4bd89d84584e58c459bd732efebb1722af80ab13c6516832004f9",
+  "gradleHash": "bd71102213493060956ec229d946beee57158dbd89d0e62b91bca0fa2c5f3531"
+}

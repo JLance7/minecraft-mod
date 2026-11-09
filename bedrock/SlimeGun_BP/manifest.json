@@ -1,0 +1,54 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Slime Gun Projectile Behavior",
+    "description": "Craft a gun that traps mobs in temporary slime.",
+    "uuid": "c7544f53-da5a-49a4-a115-9a8bd55a04e8",
+    "version": [
+      1,
+      1,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      130
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "75f14948-2846-42ba-98ca-cc23daf71a19",
+      "version": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "entry": "scripts/main.js",
+      "uuid": "169df246-6da2-4bbb-996d-77df15538dda",
+      "version": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "7b318986-bae6-4ae2-ba66-c2b3653d6aea",
+      "version": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.4.0"
+    }
+  ]
+}

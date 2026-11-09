@@ -1,0 +1,7 @@
+{
+  "required": true,
+  "package": "dev.slimegun.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": ["FrozenMobAiMixin", "FrozenTravelMixin", "FrozenCreeperMixin"],
+  "injectors": { "defaultRequire": 1 }
+}

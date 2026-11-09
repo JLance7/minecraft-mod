@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "slimegun",
+  "version": "${version}",
+  "name": "Slime Gun",
+  "description": "A slimeball-powered gun that traps mobs in temporary, breakable slime cocoons.",
+  "authors": ["Slime Gun contributors"],
+  "license": "MIT",
+  "icon": "assets/slimegun/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["dev.slimegun.SlimeGunMod"],
+    "client": ["dev.slimegun.SlimeGunClient"]
+  },
+  "mixins": ["slimegun.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

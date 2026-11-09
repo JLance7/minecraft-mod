@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "id": "slimegun-test",
+  "version": "1.0.0",
+  "name": "Slime Gun Game Tests",
+  "environment": "*",
+  "entrypoints": { "fabric-gametest": ["dev.slimegun.SlimeGunGameTests"] },
+  "depends": { "slimegun": "*", "fabric-gametest-api-v1": "*" }
+}

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "slimegun:slime_gun",
+      "materials": {
+        "default": "entity"
+      },
+      "textures": {
+        "default": "textures/entity/slime_gun_held"
+      },
+      "geometry": {
+        "default": "geometry.slimegun.held_gun"
+      },
+      "animations": {
+        "hold": "animation.slimegun.hold"
+      },
+      "scripts": {
+        "animate": [
+          "hold"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.slimegun.held_gun"
+      ]
+    }
+  }
+}

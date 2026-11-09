@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.slimegun.FreezeRulesTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-11-09T02:37:48.846Z" hostname="EPIC-DESKTOP" time="0.05">
+  <properties/>
+  <testcase name="negativeCoordinatesUseFloorNotTruncation()" classname="dev.slimegun.FreezeRulesTest" time="0.035"/>
+  <testcase name="normalLargeMobFitsTheBound()" classname="dev.slimegun.FreezeRulesTest" time="0.001"/>
+  <testcase name="refreshedDeadlineNeverShortensAnExistingCocoon()" classname="dev.slimegun.FreezeRulesTest" time="0.001"/>
+  <testcase name="boundaryStraddlingMobGetsEveryIntersectedCellExactlyOnce()" classname="dev.slimegun.FreezeRulesTest" time="0.003"/>
+  <testcase name="enormousMobsCannotCreateUnboundedBlocks()" classname="dev.slimegun.FreezeRulesTest" time="0.002"/>
+  <testcase name="cleanupSchedulingAlwaysHasAPositiveBoundedDelay()" classname="dev.slimegun.FreezeRulesTest" time="0.001"/>
+  <testcase name="humanoidFitsTwoBlocksWithoutAnExtraTopLayer()" classname="dev.slimegun.FreezeRulesTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

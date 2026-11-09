@@ -1,0 +1,46 @@
+plugins {
+    id 'fabric-loom' version '1.10.5'
+}
+
+version = '1.0.0'
+group = 'dev.slimegun'
+base { archivesName = 'slime-gun' }
+
+repositories { mavenCentral() }
+
+dependencies {
+    minecraft 'com.mojang:minecraft:1.21.1'
+    mappings 'net.fabricmc:yarn:1.21.1+build.3:v2'
+    modImplementation "net.fabricmc:fabric-loader:${loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_api_version}"
+    testImplementation platform('org.junit:junit-bom:5.11.4')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+processResources {
+    inputs.property 'version', project.version
+    filesMatching('fabric.mod.json') { expand(version: project.version) }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+    withSourcesJar()
+}
+tasks.withType(JavaCompile).configureEach {
+    options.release = 21
+    options.encoding = 'UTF-8'
+}
+test { useJUnitPlatform() }
+jar { from('LICENSE') { rename { "${it}_slimegun" } } }
+
+// Fabric's separate test mod runs actual Minecraft block/entity checks. It is
+// excluded from the distributable mod JAR.
+fabricApi {
+    configureTests {
+        createSourceSet = true
+        modId = 'slimegun-test'
+        enableGameTests = true
+    }
+}

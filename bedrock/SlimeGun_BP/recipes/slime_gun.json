@@ -1,0 +1,34 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "slimegun:slime_gun"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "ISI",
+      "RDS",
+      "  I"
+    ],
+    "key": {
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "S": {
+        "item": "minecraft:slime_ball"
+      },
+      "R": {
+        "item": "minecraft:redstone"
+      },
+      "D": {
+        "item": "minecraft:dispenser"
+      }
+    },
+    "result": {
+      "item": "slimegun:slime_gun",
+      "count": 1
+    }
+  }
+}

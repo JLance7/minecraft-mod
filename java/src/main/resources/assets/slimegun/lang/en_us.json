@@ -1,0 +1,9 @@
+{
+  "item.slimegun.slime_gun": "Slime Gun",
+  "block.slimegun.slime_cocoon": "Slime Cocoon",
+  "effect.slimegun.slimebound": "Slimebound",
+  "message.slimegun.no_ammo": "You need slimeballs to fire the Slime Gun.",
+  "tooltip.slimegun.fire": "Right-click: encase a mob in slime for 8 seconds",
+  "tooltip.slimegun.ammo": "Ammo: 1 slimeball | Range: 28 blocks | Cooldown: 1 second",
+  "tooltip.slimegun.release": "Break the surrounding slime to free the mob early."
+}

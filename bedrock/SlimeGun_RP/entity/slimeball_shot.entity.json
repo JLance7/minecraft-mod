@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "slimegun:slimeball_shot",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/slimeball_shot"
+      },
+      "geometry": {
+        "default": "geometry.slimegun.slimeball"
+      },
+      "render_controllers": [
+        "controller.render.slimegun.slimeball"
+      ]
+    }
+  }
+}

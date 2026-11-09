@@ -1,0 +1,9 @@
+{
+  "resource_pack_name": "slimegun",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "slimegun_gun": {
+      "textures": "textures/items/slime_gun"
+    }
+  }
+}
